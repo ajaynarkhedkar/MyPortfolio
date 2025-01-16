@@ -1,0 +1,56 @@
+    <!-- Counter Area Start-->
+    <section class="counter-section section-padding">
+        <div class="container">
+          <div class="row">
+            <!-- Counter Item -->
+            <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+              <div class="counter wow fadeInDown" data-wow-delay="0.3s">
+                <div class="icon"><i class="icon-briefcase"></i></div>
+                <div class="counterUp">12+</div>
+                <p>Project Working</p>
+              </div>
+            </div>
+            <!-- Counter Item -->
+            <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+              <div class="counter wow fadeInDown" data-wow-delay="0.6s">
+                <div class="icon"><i class="icon-check"></i></div>
+                <!-- <div class="counterUp">4100&#43;</div>
+                <p>Hours Worked</p> -->
+                <div class="counterUp">
+                  <span class="number">4100</span><span class="plus">+</span>
+              </div>
+              <p>Hours Worked</p>
+              </div>
+            </div>
+            <!-- Counter Item -->
+            <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+              <div class="counter wow fadeInDown" data-wow-delay="0.9s">
+                <div class="icon"><i class="icon-diamond"></i></div>
+                <div class="counterUp">9</div>
+                <p>Awards Received</p>
+              </div>
+            </div>
+            <!-- Counter Item -->
+            <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+              <div class="counter wow fadeInDown" data-wow-delay="1.2s">
+                <div class="icon"><i class="icon-heart"></i></div>
+                <div class="counterUp">299</div>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Counter Area End-->
+       <script>
+        // Retrieve the numeric value for calculations
+const counter = document.querySelector('.counterUp');
+const value = parseInt(counter.getAttribute('data-value'), 10);
+
+// Example: If needed, update the displayed text dynamically
+counter.innerText = value + '+'; // Ensures the display shows "4100+"
+
+// Perform any calculations using `value` without issues
+console.log("Value for calculations:", value); // Logs 4100
+
+       </script>
